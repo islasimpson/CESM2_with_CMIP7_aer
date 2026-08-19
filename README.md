@@ -6,9 +6,9 @@ To avoid changing the piControl baseline and necessitating re-tuning the CMIP7 a
 Contents of this repo:
 
 - yaml files that contain the information on the CMIP6 and CMIP7 source files and regridding needs 
-	```emission\_file\_anthro\_sfc\_info.yml```
-	```emission\_file\_anthro\_elev\_info.yml```
-	```emission\_file\_bmb\_sfc\_info.yml```
+	```emission\_file\_anthro\_sfc\_info.yml``` \\
+	```emission\_file\_anthro\_elev\_info.yml``` \\
+	```emission\_file\_bmb\_sfc\_info.yml``` \\
 
 - script for computing the anomalies relative to the CMIP6 piControl and spreading emissions deficits
 	```./make_emissions/anthro/sfc/CMIP7/make_anthro_sfc_emissions.ipynb```
