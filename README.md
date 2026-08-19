@@ -21,10 +21,14 @@ To avoid changing the piControl baseline and necessitating re-tuning the CMIP7 a
 
 # Order of operations:
 
-1. populate the yaml files with details on filenames, variables an remapping information following the example yml files.
-2. If SOAG is needed and you are computing it from the components, do that using the script in ./SOAG
-3. Remap any ne30 files to f09 or between any other grid options (a wgt file for the relevant grid remapping should simply be provided in the yml file)
-  - make sure `./REMAP/list_files.py` is pointing to the correct yml file
-  - run `./REMAP/remap_files.sh`
+<ol>
+  <li>populate the yaml files with details on filenames, variables an remapping information following the example yml files.</li>
+  <li>If SOAG is needed and you are computing it from the components, do that using the script in ./SOAG</li>
+  <li>Remap any ne30 files to f09 or between any other grid options (a wgt file for the relevant grid remapping should simply be provided in the yml file)
+    <ol type="a">
+      <li>make sure `./REMAP/list_files.py` is pointing to the correct yml file</li>
+      <li>run `./REMAP/remap_files.sh`</li>
+    </ol>
+</ol>
  
 
