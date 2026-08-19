@@ -1,0 +1,184 @@
+bc_a4:
+
+  cmip6:
+    piControl:
+      files:
+        - path: "/glade/p/cesmdata/cseg/inputdata/atm/cam/chem/emis/CMIP6_emissions_1750_2015/emissions-cmip6_bc_a4_anthro_surface_1750-2015_0.9x1.25_c20170608.nc"
+          vars: 
+            - "emiss_anthro"
+    hist:
+      files:
+        - path: "/glade/p/cesmdata/cseg/inputdata/atm/cam/chem/emis/emissions_ssp370/emissions-cmip6-ScenarioMIP_IAMC-AIM-ssp370-1-1_bc_a4_anthro_surface_mol_175001-210101_0.9x1.25_c20190222.nc"
+          vars: 
+            - "emiss_anthro"
+
+  cmip7:
+    piControl:
+      files:
+        - path: "/glade/campaign/acom/MUSICA/emis/cmip7/ne30/CEDS-CMIP-2025-04-18_20251030/bc_a4-em-anthro_input4MIPs_emissions_CMIP_CEDS-CMIP-2025-04-18_gn_175001-202312_c20251030.nc"
+          vars: 
+            - "emiss"
+          remap:
+            method: "conservative"
+            wgtfile: "/glade/campaign/cgd/cas/islas/regridding/mapping_files/ne30pg3_to_0p9x1p25_conserve.nc"
+    hist:
+      files:
+        - path: "/glade/campaign/acom/MUSICA/emis/cmip7/ne30/CEDS-CMIP-2025-04-18_20251030/bc_a4-em-anthro_input4MIPs_emissions_CMIP_CEDS-CMIP-2025-04-18_gn_175001-202312_c20251030.nc"
+          vars:  
+            - "emiss"
+          remap:
+            method: "conservative"
+            wgtfile: "/glade/campaign/cgd/cas/islas/regridding/mapping_files/ne30pg3_to_0p9x1p25_conserve.nc"
+SO2:
+
+  cmip6:
+    piControl:
+      files:
+      - path: "/glade/p/cesmdata/cseg/inputdata/atm/cam/chem/emis/CMIP6_emissions_1750_2015/emissions-cmip6_SO2_anthro-ag-ship-res_surface_1750-2015_0.9x1.25_c20170616.nc"
+        vars:
+          - "emiss_ag_sol_was"
+          - "emiss_ship"
+          - "emiss_res_tran"
+      - path: "/glade/p/cesmdata/cseg/inputdata/atm/cam/chem/emis/CMIP6_emissions_1750_2015/emissions-cmip6_SO2_anthro-ene_surface_1750-2015_0.9x1.25_c20170616.nc"
+        vars:
+          - "emiss_ene_ind"
+    hist:
+      files:
+      - path: "/glade/p/cesmdata/cseg/inputdata/atm/cam/chem/emis/emissions_ssp370/emissions-cmip6-ScenarioMIP_IAMC-AIM-ssp370-1-1_SO2_anthro-ag-ship-res_surface_mol_175001-210101_0.9x1.25_c20200924.nc"
+        vars:
+          - "emiss_ag_sol_was"
+          - "emiss_ship"
+          - "emiss_res_tran"
+      - path: "/glade/p/cesmdata/cseg/inputdata/atm/cam/chem/emis/emissions_ssp370/emissions-cmip6-ScenarioMIP_IAMC-AIM-ssp370-1-1_SO2_anthro-ene_surface_mol_175001-210101_0.9x1.25_c20190222.nc"
+        vars:
+          - "emiss_ene_ind"
+  cmip7:
+    piControl:
+      files:
+      - path: "/glade/campaign/cesm/cesmdata/inputdata/atm/cam/chem/emis/cmip7/ne30/CEDS-CMIP-2025-04-18_20251030/SO2-em-anthro_input4MIPs_emissions_CMIP_CEDS-CMIP-2025-04-18_gn_175001-202312_c20251030.nc"
+        vars:
+          - "emiss"
+        remap:
+          method: "conservative"
+          wgtfile: "/glade/campaign/cgd/cas/islas/regridding/mapping_files/ne30pg3_to_0p9x1p25_conserve.nc"
+    hist:
+      files:
+      - path: "/glade/campaign/acom/MUSICA/emis/cmip7/ne30/CEDS-CMIP-2025-04-18_20251030/SO2-em-anthro_input4MIPs_emissions_CMIP_CEDS-CMIP-2025-04-18_gn_175001-202312_c20251030.nc"
+        vars:
+          - "emiss"
+        remap:
+          method: "conservative"
+          wgtfile: "/glade/campaign/cgd/cas/islas/regridding/mapping_files/ne30pg3_to_0p9x1p25_conserve.nc"
+so4_a1:
+  cmip6:
+    piControl:
+      files:
+      - path: "/glade/p/cesmdata/cseg/inputdata/atm/cam/chem/emis/emissions_ssp370/emissions-cmip6-ScenarioMIP_IAMC-AIM-ssp370-1-1_so4_a1_anthro-ag-ship_surface_mol_175001-210101_0.9x1.25_c20200924.nc"
+        vars:
+          - "emiss_ag_sol_was"
+          - "emiss_shipping"
+    hist:
+      files:
+      - path: "/glade/p/cesmdata/cseg/inputdata/atm/cam/chem/emis/emissions_ssp370/emissions-cmip6-ScenarioMIP_IAMC-AIM-ssp370-1-1_so4_a1_anthro-ag-ship_surface_mol_175001-210101_0.9x1.25_c20200924.nc"
+        vars:
+          - "emiss_ag_sol_was"
+          - "emiss_shipping"
+  cmip7:
+    piControl:
+      files:
+      - path: "/glade/campaign/acom/MUSICA/emis/cmip7/ne30/CEDS-CMIP-2025-04-18_20251030/so4_a1_ag_ship_slv-em-anthro_input4MIPs_emissions_CMIP_CEDS-CMIP-2025-04-18_gn_175001-202312_c20251030.nc"
+        vars: 
+          - "emiss"
+        remap:
+          method: "conservative"
+          wgtfile: "/glade/campaign/cgd/cas/islas/regridding/mapping_files/ne30pg3_to_0p9x1p25_conserve.nc"
+    hist:
+      files:
+      - path: "/glade/campaign/acom/MUSICA/emis/cmip7/ne30/CEDS-CMIP-2025-04-18_20251030/so4_a1_ag_ship_slv-em-anthro_input4MIPs_emissions_CMIP_CEDS-CMIP-2025-04-18_gn_175001-202312_c20251030.nc"
+        vars: 
+          - "emiss"
+        remap:
+          method: "conservative"
+          wgtfile: "/glade/campaign/cgd/cas/islas/regridding/mapping_files/ne30pg3_to_0p9x1p25_conserve.nc"
+so4_a2:
+  cmip6:
+    piControl:
+      files:
+      - path: "/glade/p/cesmdata/cseg/inputdata/atm/cam/chem/emis/emissions_ssp370/emissions-cmip6-ScenarioMIP_IAMC-AIM-ssp370-1-1_so4_a2_anthro-res_surface_mol_175001-210101_0.9x1.25_c20200924.nc"
+        vars:
+          - "emiss_res_tran"
+    hist:
+      files:
+      - path: "/glade/p/cesmdata/cseg/inputdata/atm/cam/chem/emis/emissions_ssp370/emissions-cmip6-ScenarioMIP_IAMC-AIM-ssp370-1-1_so4_a2_anthro-res_surface_mol_175001-210101_0.9x1.25_c20200924.nc"
+        vars:
+          - "emiss_res_tran"
+  cmip7:
+    piControl:
+      files:
+      - path: "/glade/campaign/acom/MUSICA/emis/cmip7/ne30/CEDS-CMIP-2025-04-18_20251030/so4_a2_res_trs-em-anthro_input4MIPs_emissions_CMIP_CEDS-CMIP-2025-04-18_gn_175001-202312_c20251030.nc"
+        vars: 
+          - "emiss"
+        remap:
+          method: "conservative"
+          wgtfile: "/glade/campaign/cgd/cas/islas/regridding/mapping_files/ne30pg3_to_0p9x1p25_conserve.nc"
+    hist:
+      files:
+      - path: "/glade/campaign/acom/MUSICA/emis/cmip7/ne30/CEDS-CMIP-2025-04-18_20251030/so4_a2_res_trs-em-anthro_input4MIPs_emissions_CMIP_CEDS-CMIP-2025-04-18_gn_175001-202312_c20251030.nc"
+        vars: 
+          - "emiss"
+        remap:
+          method: "conservative"
+          wgtfile: "/glade/campaign/cgd/cas/islas/regridding/mapping_files/ne30pg3_to_0p9x1p25_conserve.nc"
+pom_a4:
+  cmip6:
+    piControl:
+      files:
+      - path: "/glade/p/cesmdata/cseg/inputdata/atm/cam/chem/emis/emissions_ssp370/emissions-cmip6-ScenarioMIP_IAMC-AIM-ssp370-1-1_pom_a4_anthro_surface_mol_175001-210101_0.9x1.25_c20190222.nc"
+        vars:
+          - "emiss_anthro"
+    hist:
+      files:
+      - path: "/glade/p/cesmdata/cseg/inputdata/atm/cam/chem/emis/emissions_ssp370/emissions-cmip6-ScenarioMIP_IAMC-AIM-ssp370-1-1_pom_a4_anthro_surface_mol_175001-210101_0.9x1.25_c20190222.nc"
+        vars:
+          - "emiss_anthro"
+  cmip7:
+    piControl:
+      files:
+      - path: "/glade/campaign/acom/MUSICA/emis/cmip7/ne30/CEDS-CMIP-2025-04-18_20251030/pom_a4-em-anthro_input4MIPs_emissions_CMIP_CEDS-CMIP-2025-04-18_gn_175001-202312_c20251030.nc"
+        vars: 
+          - "emiss"
+        remap:
+          method: "conservative"
+          wgtfile: "/glade/campaign/cgd/cas/islas/regridding/mapping_files/ne30pg3_to_0p9x1p25_conserve.nc"
+    hist:
+      files:
+      - path: "/glade/campaign/acom/MUSICA/emis/cmip7/ne30/CEDS-CMIP-2025-04-18_20251030/pom_a4-em-anthro_input4MIPs_emissions_CMIP_CEDS-CMIP-2025-04-18_gn_175001-202312_c20251030.nc"
+        vars: 
+          - "emiss"
+        remap:
+          method: "conservative"
+          wgtfile: "/glade/campaign/cgd/cas/islas/regridding/mapping_files/ne30pg3_to_0p9x1p25_conserve.nc"
+
+SOAG:
+  cmip6:
+    piControl:
+      files:
+      - path: "/glade/p/cesmdata/cseg/inputdata/atm/cam/chem/emis/CMIP6_emissions_1750_2015/emissions-cmip6_SOAGx1.5_anthro_surface_1750-2015_0.9x1.25_c20170608.nc"
+        vars:
+          - "emiss_anthro"
+    hist:
+      files:
+      - path: "/glade/p/cesmdata/cseg/inputdata/atm/cam/chem/emis/CMIP6_emissions_1750_2015/emissions-cmip6_SOAGx1.5_anthro_surface_1750-2015_0.9x1.25_c20170608.nc"
+        vars:
+          - "emiss_anthro"
+  cmip7:
+    piControl:
+      files:
+      - path: "/glade/campaign/acom/MUSICA/emis/cmip7/f09/CEDS-CMIP-2025-04-18/SOAGx1.5-VOC-anthro_input4MIPs_emissions_CMIP_CEDS-CMIP-2025-04-18-supplemental_gn_175001-202312_c20260122.nc"
+        vars: 
+          - "emiss"
+    hist:
+      files:
+      - path: "/glade/campaign/acom/MUSICA/emis/cmip7/f09/CEDS-CMIP-2025-04-18/SOAGx1.5-VOC-anthro_input4MIPs_emissions_CMIP_CEDS-CMIP-2025-04-18-supplemental_gn_175001-202312_c20260122.nc"
+        vars: 
+          - "emiss"
