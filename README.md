@@ -15,9 +15,9 @@ To avoid changing the piControl baseline and necessitating re-tuning the CMIP7 a
   - `list_files.py` - python script used by `remap_files.sh` to read in the information from the yaml file (note, you'll need to edit the yml file being opened here depending on which kind of emissions you're wanting to regrid.
 
 
-- script for computing the anomalies relative to the CMIP6 piControl and spreading emissions deficits
+- scripts for computing the anomalies relative to the CMIP6 piControl and spreading emissions deficits
   - `./make_emissions/anthro/sfc/CMIP7/make_anthro_sfc_emissions.ipynb`
-
+  - `./make_emissions/anthro/elev/CMIP7/make_anthro_elev_emissions.ipynb`
 
 
 
