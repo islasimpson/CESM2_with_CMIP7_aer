@@ -6,9 +6,12 @@ To avoid changing the piControl baseline and necessitating re-tuning the CMIP7 a
 # Contents of this repo:
 
 - yaml files that contain the information on the CMIP6 and CMIP7 source files and regridding needs 
-  - `emission_file_anthro_sfc_info.yml` 
-  - `emission_file_anthro_elev_info.yml` 
-  - `emission_file_bmb_sfc_info.yml`
+  - `emission_file_anthro_sfc_info.yml` - Specifies source files, variables and remapping needs for anthropogenic surface emissions 
+  - `emission_file_anthro_elev_info.yml` - Specifies source files, variables and remapping needs for anthropogenic elevated emissions 
+  - `emission_file_bmb_sfc_info.yml` - Specifies source files, variables and remapping needs for biomass surface emissions
+
+- remapping scripts
+
 
 - script for computing the anomalies relative to the CMIP6 piControl and spreading emissions deficits
   - `./make_emissions/anthro/sfc/CMIP7/make_anthro_sfc_emissions.ipynb`
