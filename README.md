@@ -12,7 +12,7 @@ To avoid changing the piControl baseline and necessitating re-tuning the CMIP7 a
 
 - regridding scripts to convert from the ne30 grid to the f09 grid
   - `remap_files.sh` - bash script to be run to remap all the required files
-  - `list_files.py` - python script to read in the information from the yaml file (note, you'll need to edit the yml file being opened here depending on which kind of emissions you're wanting to regrid.
+  - `list_files.py` - python script used by `remap_files.sh` to read in the information from the yaml file (note, you'll need to edit the yml file being opened here depending on which kind of emissions you're wanting to regrid.
 
 
 - script for computing the anomalies relative to the CMIP6 piControl and spreading emissions deficits
