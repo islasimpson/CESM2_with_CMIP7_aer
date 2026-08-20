@@ -29,6 +29,13 @@ To avoid changing the piControl baseline and necessitating re-tuning the CMIP7 a
       <li>make sure `./REMAP/list_files.py` is pointing to the correct yml file</li>
       <li>run `./REMAP/remap_files.sh`</li>
     </ol>
+  <li>Compute the anomalous emissions and spread out any deficits to nearby grid points using the appropriate scripts</li>
+  <li>Check the output
+    <ol, type="a">
+      <li>`./verify_emissions/check_timeseries/check_emissions_timeseries.ipynb` - Check how the globally integrated timeseries are looking.
+      <li>`./verify_emissions/check_spread/check_percentage_spread.ipynb` - Check the fraction of emissions being spread and how far
+      <li>`./verify_emissions/check_maps/check_maps.ipynb` - Check how maps of the species are looking
+    </ol>
 </ol>
  
 
