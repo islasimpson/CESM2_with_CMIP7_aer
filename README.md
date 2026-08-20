@@ -18,6 +18,7 @@ To avoid changing the piControl baseline and necessitating re-tuning the CMIP7 a
 - scripts for computing the anomalies relative to the CMIP6 piControl and spreading emissions deficits
   - `./make_emissions/anthro/sfc/CMIP7/make_anthro_sfc_emissions.ipynb`
   - `./make_emissions/anthro/elev/CMIP7/make_anthro_elev_emissions.ipynb`
+  - `./make_emissions/bmb/sfc/CMIP7/make_bmb_sfc_emissions.ipynb
 
 # Order of operations:
 
