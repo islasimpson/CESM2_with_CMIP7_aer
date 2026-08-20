@@ -48,3 +48,5 @@ To avoid changing the piControl baseline and necessitating re-tuning the CMIP7 a
 - The computation of CMIP7 anomalies relative to the piControl and their addition onto the CMIP6 piControl was done on the unsmoothed emissions to avoid the differences between the piControl's that arise between unsmoothed (CMIP6) and smoothed (CMIP7).  The CMIP7 smoothed emissions provided in input4MIPs are smoothed all the way back so these are not being used.  Instead the emissions are smoothed after the anomaly computation.
 - Smoothing of contructed biomass burning emissions was done following the CMIP7 protocol which is centered 5 year running means using
   - `./make_emissions/smooth_bmb/smooth_bmb.ipynb`
+- Smoothing was checked at 
+  - `./make_emissions/check_smoothed_bmb.ipynb`
