@@ -69,24 +69,22 @@ SO2:
         remap:
           method: "conservative"
           wgtfile: "/glade/campaign/cgd/cas/islas/regridding/mapping_files/ne30pg3_to_0p9x1p25_conserve.nc"
-so4_a1:
+so4_a1_ag:
   cmip6:
     piControl:
       files:
-      - path: "/glade/p/cesmdata/cseg/inputdata/atm/cam/chem/emis/emissions_ssp370/emissions-cmip6-ScenarioMIP_IAMC-AIM-ssp370-1-1_so4_a1_anthro-ag-ship_surface_mol_175001-210101_0.9x1.25_c20200924.nc"
+      - path: "/glade/campaign/cgd/cas/islas/python_savs/CESM2_with_CMIP7_aer/make_emissions/from_CEDS/CMIP6/so4_a1_ag_emissions_f09.nc"
         vars:
-          - "emiss_ag_sol_was"
-          - "emiss_shipping"
+          - "emiss"
     hist:
       files:
-      - path: "/glade/p/cesmdata/cseg/inputdata/atm/cam/chem/emis/emissions_ssp370/emissions-cmip6-ScenarioMIP_IAMC-AIM-ssp370-1-1_so4_a1_anthro-ag-ship_surface_mol_175001-210101_0.9x1.25_c20200924.nc"
+      - path: "/glade/campaign/cgd/cas/islas/python_savs/CESM2_with_CMIP7_aer/make_emissions/from_CEDS/CMIP6/so4_a1_ag_emissions_f09.nc"
         vars:
-          - "emiss_ag_sol_was"
-          - "emiss_shipping"
+          - "emiss"
   cmip7:
     piControl:
       files:
-      - path: "/glade/campaign/acom/MUSICA/emis/cmip7/ne30/CEDS-CMIP-2025-04-18_20251030/so4_a1_ag_ship_slv-em-anthro_input4MIPs_emissions_CMIP_CEDS-CMIP-2025-04-18_gn_175001-202312_c20251030.nc"
+      - path: "/glade/campaign/cgd/cas/islas/python_savs/CESM2_with_CMIP7_aer/make_emissions/from_CEDS/CMIP7/so4_a1_ag_emissions_ne30pg3.nc"
         vars: 
           - "emiss"
         remap:
@@ -94,7 +92,65 @@ so4_a1:
           wgtfile: "/glade/campaign/cgd/cas/islas/regridding/mapping_files/ne30pg3_to_0p9x1p25_conserve.nc"
     hist:
       files:
-      - path: "/glade/campaign/acom/MUSICA/emis/cmip7/ne30/CEDS-CMIP-2025-04-18_20251030/so4_a1_ag_ship_slv-em-anthro_input4MIPs_emissions_CMIP_CEDS-CMIP-2025-04-18_gn_175001-202312_c20251030.nc"
+      - path: "/glade/campaign/cgd/cas/islas/python_savs/CESM2_with_CMIP7_aer/make_emissions/from_CEDS/CMIP7/so4_a1_ag_emissions_ne30pg3.nc"
+        vars: 
+          - "emiss"
+        remap:
+          method: "conservative"
+          wgtfile: "/glade/campaign/cgd/cas/islas/regridding/mapping_files/ne30pg3_to_0p9x1p25_conserve.nc"
+so4_a1_ship:
+  cmip6:
+    piControl:
+      files:
+      - path: "/glade/campaign/cgd/cas/islas/python_savs/CESM2_with_CMIP7_aer/make_emissions/from_CEDS/CMIP6/so4_a1_ship_emissions_f09.nc"
+        vars:
+          - "emiss"
+    hist:
+      files:
+      - path: "/glade/campaign/cgd/cas/islas/python_savs/CESM2_with_CMIP7_aer/make_emissions/from_CEDS/CMIP6/so4_a1_ship_emissions_f09.nc"
+        vars:
+          - "emiss"
+  cmip7:
+    piControl:
+      files:
+      - path: "/glade/campaign/cgd/cas/islas/python_savs/CESM2_with_CMIP7_aer/make_emissions/from_CEDS/CMIP7/so4_a1_ship_emissions_ne30pg3.nc"
+        vars: 
+          - "emiss"
+        remap:
+          method: "conservative"
+          wgtfile: "/glade/campaign/cgd/cas/islas/regridding/mapping_files/ne30pg3_to_0p9x1p25_conserve.nc"
+    hist:
+      files:
+      - path: "/glade/campaign/cgd/cas/islas/python_savs/CESM2_with_CMIP7_aer/make_emissions/from_CEDS/CMIP7/so4_a1_ship_emissions_ne30pg3.nc"
+        vars: 
+          - "emiss"
+        remap:
+          method: "conservative"
+          wgtfile: "/glade/campaign/cgd/cas/islas/regridding/mapping_files/ne30pg3_to_0p9x1p25_conserve.nc"
+so4_a1_slv_was:
+  cmip6:
+    piControl:
+      files:
+      - path: "/glade/campaign/cgd/cas/islas/python_savs/CESM2_with_CMIP7_aer/make_emissions/from_CEDS/CMIP6/so4_a1_slv_was_emissions_f09.nc"
+        vars:
+          - "emiss"
+    hist:
+      files:
+      - path: "/glade/campaign/cgd/cas/islas/python_savs/CESM2_with_CMIP7_aer/make_emissions/from_CEDS/CMIP6/so4_a1_slv_was_emissions_f09.nc"
+        vars:
+          - "emiss"
+  cmip7:
+    piControl:
+      files:
+      - path: "/glade/campaign/cgd/cas/islas/python_savs/CESM2_with_CMIP7_aer/make_emissions/from_CEDS/CMIP7/so4_a1_slv_was_emissions_ne30pg3.nc"
+        vars: 
+          - "emiss"
+        remap:
+          method: "conservative"
+          wgtfile: "/glade/campaign/cgd/cas/islas/regridding/mapping_files/ne30pg3_to_0p9x1p25_conserve.nc"
+    hist:
+      files:
+      - path: "/glade/campaign/cgd/cas/islas/python_savs/CESM2_with_CMIP7_aer/make_emissions/from_CEDS/CMIP7/so4_a1_slv_was_emissions_ne30pg3.nc"
         vars: 
           - "emiss"
         remap:
