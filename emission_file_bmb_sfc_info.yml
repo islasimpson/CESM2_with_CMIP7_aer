@@ -56,7 +56,7 @@ pom_a4:
             remap:
               method: "conservative"
               wgtfile: "/glade/campaign/cgd/cas/islas/regridding/mapping_files/ne30pg3_to_0p9x1p25_conserve.nc"
-so4_a1:
+so4_a1_bmb:
     cmip6:
       piControl:
         files:
