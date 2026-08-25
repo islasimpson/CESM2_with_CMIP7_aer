@@ -60,6 +60,8 @@ def convert_molecules_to_tg_specifywgt(dat,molecular_weight,varname=None):
     """ Convert surface emissions in molecules/cm2/s to Tg
 
     """
+    alldat = dat # alldat also contains weights if needed
+
     if varname is not None:
         dat = dat[varname]
     else:
@@ -94,12 +96,17 @@ def convert_molecules_to_tg_specifywgt(dat,molecular_weight,varname=None):
 
 
     # Integrate over space
-    dlon = np.deg2rad( (dat.lon[2] - dat.lon[1]))
-    dlat = np.deg2rad( (dat.lat[2] - dat.lat[1]))
-    area = xr.ones_like(dat.isel(time=0))
-    weights = np.cos(np.deg2rad(area.lat))*dlat*dlon*re**2. # area in cm2
-    dat_g_y_w = dat_g_y.weighted(weights)
-    dattot = dat_g_y_w.sum(("lon","lat"))
+    if "ncol" in dat.dims: # using spectral element
+        weights = alldat.area*re**2
+        dat_g_y_w = dat_g_y.weighted(weights)
+        dattot = dat_g_y_w.sum('ncol')
+    else:
+        dlon = np.deg2rad( (dat.lon[2] - dat.lon[1]))
+        dlat = np.deg2rad( (dat.lat[2] - dat.lat[1]))
+        area = xr.ones_like(dat.isel(time=0))
+        weights = np.cos(np.deg2rad(area.lat))*dlat*dlon*re**2. # area in cm2
+        dat_g_y_w = dat_g_y.weighted(weights)
+        dattot = dat_g_y_w.sum(("lon","lat"))
 
     # Convert from grams to terra grams
     dattot = dattot/1e12
