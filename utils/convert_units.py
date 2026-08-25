@@ -114,4 +114,15 @@ def convert_molecules_to_tg_specifywgt(dat,molecular_weight,varname=None):
     return dattot
 
 
+def get_global_avg_particle(dat, var):
+    """ Take the global average of the particle emissions (for testing) """
+    if "ncol" in dat.dims: # using spectral element
+        weights = dat.area
+        dattot = dat[var].weighted(weights).mean("ncol")
+    else:
+        weights = np.cos(np.deg2rad(dat.lat))
+        dattot = dat[var].weighted(weights).mean(("lat","lon"))
+    return dattot 
+
+
 
